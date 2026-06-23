@@ -1,0 +1,77 @@
+/* Target the main background of the Streamlit app */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(to bottom right, #1a51d2, #0ea5e9);
+    color: #ffffff; /* White text for maximum contrast and readability */
+}
+/* Glassmorphism (Frosted Glass) for the Typing Form */
+[data-testid="stForm"] {
+    background: rgba(255, 255, 255, 0.35); /* Semi-transparent white */
+    backdrop-filter: blur(12px); /* Blurs the gradient behind it */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Soft white border */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1); /* Soft shadow underneath */
+}
+
+/* Target the Target Text box (st.info) */
+[data-testid="stAlert"] {
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    color: #1e293b;
+}
+
+/* Style the main title in the header */
+.custom-header h1 {
+    color: #000000; /* Deep, rich violet */
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+    /* Uses a soft white shadow to make the text pop off the background */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
+}
+
+/* Style the subtext in the header */
+.custom-header p {
+    color: #0b0f16; /* Medium slate gray */
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* -----------------------------------------
+Phase 3: Results & Metrics Styling
+----------------------------------------- */
+
+/* 1. Fix the Success Banner (Test Completed Successfully) */
+[data-testid="stAlert"] {
+    background-color: rgba(255, 255, 255, 0.1) !important; /* Sleek glass effect */
+    border: 1px solid rgba(74, 222, 128, 0.5) !important; /* Soft green border */
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Make the text inside the success banner readable and vibrant */
+[data-testid="stAlert"] p {
+    color: #4ade80 !important; /* Bright, readable neon green */
+    font-weight: 700 !important;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* 2. Style the Metric Labels (Net Speed, Accuracy, Error Count) */
+[data-testid="stMetricLabel"] {
+    color: #bae6fd !important; /* Soft, light sky-blue */
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 3. Style the Calculated Values (e.g., 24.13 WPM) */
+[data-testid="stMetricValue"] {
+    color: #ffffff !important; /* Pure white for maximum contrast */
+    font-weight: 900 !important;
+    font-size: 2.5rem !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft drop shadow for depth */
+}

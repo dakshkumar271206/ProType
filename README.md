@@ -1,9 +1,9 @@
-⚡ ProType | Advanced Typing Speed & Accuracy Analysis
+# ⚡ ProType | Advanced Typing Speed & Accuracy Analysis
 
-Description:
+## Description:
 ProType is an interactive, Python-based typing speed testing application. Built with Streamlit, it provides a sleek, modern UI designed with custom CSS to evaluate typing proficiency in real-time.
 
-🚀 Key Features
+## 🚀 Key Features
 
 Real-Time Analytics: Calculates exact Words Per Minute (WPM), percentage-based accuracy, and absolute error counts based on user input.
 
@@ -13,12 +13,12 @@ Custom UI/UX: Features a "glassmorphism" design with semi-transparent frosted gl
 
 State Management: Utilizes Streamlit's session state to seamlessly transition between the idle, active testing, and results phases without refreshing.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Language: Python
+### Language: Python
 
-Frontend Framework: Streamlit (v1.32.0)
+### Frontend Framework: Streamlit (v1.32.0)
 
-Styling: External CSS injected dynamically
+### Styling: External CSS injected dynamically
 
-Structure: External HTML for custom headers
+### Structure: External HTML for custom headers
